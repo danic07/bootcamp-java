@@ -1,4 +1,4 @@
-package practicas.bootcamp.java.notas;
+package practica2.bootcamp.java.notas;
 
 import java.util.Scanner;
 
