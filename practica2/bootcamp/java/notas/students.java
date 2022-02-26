@@ -9,7 +9,7 @@ public class students {
         Scanner scanner1 = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
         Scanner scanner3 = new Scanner(System.in);
-        int numStudents;
+        int numStudents = 0;
         int studentID;
         String name;
         int numExam;
@@ -18,33 +18,37 @@ public class students {
         System.out.println("Ingrese cantidad de estudiantes: ");
         numStudents = scanner.nextInt();
 
-        System.out.println("inrese ID del estudiante: ");
+        for (int i = 0 ; i <= numStudents; i++) {
 
-        studentID = scanner0.nextInt();
+            System.out.println("inrese ID del estudiante: ");
 
-        System.out.println("Ingrese nombre y apellidos del estudiante: ");
+            studentID = scanner0.nextInt();
 
-        name = scanner1.nextLine ();
+            System.out.println("Ingrese nombre y apellidos del estudiante: ");
 
-        System.out.println("Usted ingreso el siguiente nombre " + name);
+            name = scanner1.nextLine();
 
-        System.out.println("Ingrese numero de examen: ");
+            System.out.println("Usted ingreso el siguiente nombre " + name);
 
-        numExam = scanner2.nextInt();
+            System.out.println("Ingrese numero de examen: ");
 
-        System.out.println("Usted ingreso el siguiente examen: " + numExam);
+            numExam = scanner2.nextInt();
 
-        System.out.println("Ingrese la nota que obtuvo el estudiante [0, 10]: ");
+            System.out.println("Usted ingreso el siguiente examen: " + numExam);
 
-        qualification = scanner3.nextInt();
-
-        System.out.println("Usted ingreso la siguiente nota: " + qualification);
-
-        if (qualification >= 0 && qualification <= 10);
-        else {System.out.println("Ingresó una nota incorrecta *[0, 10]");
             System.out.println("Ingrese la nota que obtuvo el estudiante [0, 10]: ");
+
             qualification = scanner3.nextInt();
+
             System.out.println("Usted ingreso la siguiente nota: " + qualification);
+
+            if (qualification >= 0 && qualification <= 10) ;
+            else {
+                System.out.println("Ingresó una nota incorrecta *[0, 10]");
+                System.out.println("Ingrese la nota que obtuvo el estudiante [0, 10]: ");
+                qualification = scanner3.nextInt();
+                System.out.println("Usted ingreso la siguiente nota: " + qualification);
+            }
         }
     }
 
