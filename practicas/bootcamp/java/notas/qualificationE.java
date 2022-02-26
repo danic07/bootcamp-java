@@ -1,4 +1,5 @@
 package practicas.bootcamp.java.notas;
 
-public class notas {
+public class qualificationE {
+
 }
